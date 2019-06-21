@@ -195,7 +195,7 @@ for j in range(len(wind_start_snp_dict)):  ##for each window with the ascending 
 				f = snp_list[y] 	#second snp position in the file - particular row where the snp is located in the file
 				geno_list_snp1 = snp_geno_dict[e]  #genotypes for all 20 Northern and Western Europeans for the first snp
 				geno_list_snp2 = snp_geno_dict[f]  	#genotypes for all 20 Northern and Western Europeans for the second snp
-				for v in range(len(20)): 	#for each individual from nweur get the genotypes  
+				for v in range(len(geno_list)): 	#for each individual from nweur get the genotypes  
 					w = geno_list_snp1[v] 
 					z = geno_list_snp2[v]
 					total_mis += abs(int(w) - int(z)) 	#for the snp-pair, calculate the total mismatch between the genotypes of each individual from 20 total individuals from yoruba  
